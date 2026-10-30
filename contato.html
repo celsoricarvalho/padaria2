@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato & Encomendas | Padaria Trigo Dourado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🌾 Trigo Dourado</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="contato.html" class="active">Contato & Encomendas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER TOPO -->
+  <div class="page-banner">
+    <h1>Fale Conosco</h1>
+    <p>Reserve pães especiais, faça encomendas para eventos ou venha tomar um café conosco.</p>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+    <div class="contact-layout">
+      
+      <!-- INFORMAÇÕES DE CONTATO -->
+      <div class="contact-info-box">
+        <h2 class="section-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 1.5rem;">Visite nossa Casa</h2>
+        
+        <div class="contact-item">
+          <span class="icon">📍</span>
+          <div>
+            <h4>Endereço</h4>
+            <p>Rua dos Padeiros, 342 - Jardins<br>São Paulo - SP, CEP 01410-000</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">⏰</span>
+          <div>
+            <h4>Horário de Fornada & Balcão</h4>
+            <p><strong>Segunda a Sexta:</strong> 06:30 às 20:00<br>
+               <strong>Sábado:</strong> 07:00 às 20:00<br>
+               <strong>Domingo & Feriados:</strong> 07:00 às 14:00</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">📞</span>
+          <div>
+            <h4>Telefones & Atendimento</h4>
+            <p>Fixo: (11) 3456-7890<br>WhatsApp Encomendas: (11) 98765-4321</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">✉️</span>
+          <div>
+            <h4>E-mail</h4>
+            <p>contato@trigodourado.com.br</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO DE CONTATO / ENCOMENDA -->
+      <div class="form-box">
+        <h2 class="section-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 1.5rem;">Envie uma Mensagem</h2>
+        
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Obrigado! Sua mensagem foi enviada.');">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="motivo">Assunto / Tipo de Pedido</label>
+            <select id="motivo" name="motivo">
+              <option value="duvida">Dúvidas Gerais</option>
+              <option value="encomenda">Encomenda para Evento / Café da Manhã</option>
+              <option value="parceria">Parcerias e Restaurantes</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Detalhes do Pedido ou Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos o que você precisa..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Trigo Dourado</h4>
+        <p>A arte do pão de verdade, no coração da cidade.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <p><a href="#">Instagram: @trigodourado_artesanal</a><br><a href="#">Facebook: /padariatrigodourado</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Atendimento Corporativo</h4>
+        <p>Fornecemos para cafeterias, bistrôs e eventos empresariais com tabela especial sob consulta.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Padaria Artesanal Trigo Dourado. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
